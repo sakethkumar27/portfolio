@@ -1,0 +1,701 @@
+body {
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    background-image: url(bgg.png);
+    height: 2000px;
+}
+
+body.white-bg {
+    color: black;
+    height: 2000px;
+    
+}
+body.white-bg.container{
+    border:5px solid black
+}
+body.white-bg .item1{
+    color:black
+}
+body.white-bg .item{
+    color:black
+}
+body.white-bg .theme-change{
+    fill:black
+}
+
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-70%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.another{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(-90%);
+    transition: all 1s;
+}
+.other{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+.container {
+    display: flex;
+    align-items: stretch;
+   width:1200px;
+   margin-bottom:60px;
+   height:auto;
+   border:5px solid #f6f4f411;
+    overflow: hidden; /* Ensure no overflow */
+}
+.text,
+.image {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    font-size:33px;
+    height:70vh
+}
+.line {
+    position: relative;
+    width: 2px; /* Adjust line thickness as needed */
+    background-color: black;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+.image:hover img {
+    transform: scale(1.05); /* Scale the image by 5% when hovered */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow for depth */
+}
+
+
+
+.triangle {
+    
+   
+position:absolute;
+top:15% /* Adjust vertical positioning */
+}
+/* Add this CSS to your existing index.css file or a new CSS file */
+
+
+.icon-container {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.icon-wrapper svg {
+    margin-bottom:10px;
+}
+
+.icon-wrapper label {
+    text-align:center;
+}
+
+/* Order icons based on your specified order */
+.icon-wrapper.html {
+    order:1;
+}
+
+.icon-wrapper.css {
+    order:2;
+}
+
+.icon-wrapper.react {
+    order:3;
+}
+
+.icon-wrapper.javascript {
+    order:4;
+}
+
+.icon-wrapper.node {
+    order:5;
+}
+
+.icon-wrapper.mongodb {
+    order:7;
+}
+
+.icon-wrapper.git {
+    order:6;
+}
+.icon-wrapper.redux {
+    order:7;
+}
+
+.row{
+    font-size:30px;
+}
+
+.rectangle{
+ border-radius: 120px;
+}
+
+.contact-right {
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+   
+}
+
+.form-group {
+    display:flex;
+    flex-direction:row;
+    margin-bottom:15px;
+    
+    
+}
+.form-group input,
+.form-group textarea {
+    flex-grow: 1;
+    width:300px;
+    height:60px;
+    justify-items: center;
+    font-size:15px;
+    margin-bottom:15px;
+    background-color: rgb(232, 240, 254);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+form{
+    margin-top:130px
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.contact-right{
+    position:absolute;
+   left:70vw;
+   top:10vw/* Adjust as needed */
+}
+.contact-left{
+    padding:100px
+}
+
+.intro{
+    min-height:550px;
+    padding:100px;
+    justify-content: center;
+    font-size:30px;
+    margin-bottom:20px
+}
+.btn-btn2{
+    display:inline-block;
+   
+    width:fit-content;
+    border:1px solid white;
+    padding:14px 50px;
+    border-radius:6px;
+    transition: transform 0.5s;
+    text-decoration: none;
+    color:black;
+    background:white;
+    margin-right:-40px
+ }
+ .btn-btn2:hover{
+ 
+  transform:translateY(10px)
+ }
+ .btn{
+    display:inline-block;
+   
+    width:fit-content;
+    border:1px solid white;
+    padding:14px 50px;
+    border-radius:6px;
+    transition: transform 0.5s;
+    text-decoration: none;
+    color:black;
+    background:white;
+    margin-right:-40px
+ }
+ .btn:hover{
+ 
+    transform:translateY(10px)
+   }
+ .item{
+        display:flex;
+    
+        text-decoration: none;
+        color:white
+ }
+ .item label{
+    margin-left:5px;
+    padding-bottom:3px;
+    cursor:pointer
+ }
+ .item1{
+ color:white;
+ text-decoration: none;
+ }
+
+
+
+
+ @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.theme-change {
+    
+    fill: white;
+}
+a{
+cursor:pointer
+}
+@media (min-width:300px) and (max-width:500px){
+.intro  {
+    font-size:27px;
+   min-height:100px;
+    transform:translate(-1%,-11%)
+  
+}.btn-btn2{
+    height:47px;
+    width:50px;
+    font-size:23px;
+  text-align: center;
+ 
+  text-align: center;
+  padding-left: 20px; /* Adjust padding to move text to center */
+  padding-right: 50px; /* Adjust padding to move text to center */
+    
+}
+
+.projects{
+    font-size:20px
+}
+.container{
+    width:300px;
+    height:auto;
+    border:2px solid 
+    
+  
+}
+form{
+    width:70%;
+    transform:translate(-120%,190%)
+}
+
+.text{
+    font-size:25px
+}
+ .container svg{
+   height:90px;
+   width:120px;
+   
+   
+}
+.second{
+ height:700px
+}
+.image{
+    display:none;
+}
+.about{
+font-size:20px
+}
+
+.line{
+    display:none
+}
+.contact-left{
+   
+margin-left:-90px;
+font-size:17px
+}
+.contact-right{
+    margin-left:-30px;
+    font-size:20px
+}
+.contact-right form{
+
+  height:100px
+}
+#name{
+   height:30px;
+   width:90px
+}
+
+.item1 label{
+font-size:26px;
+
+}
+.item1 {
+    white-space: nowrap;
+    padding-bottom:20px /* Prevent text wrapping */
+}
+
+.item1-container {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+}
+
+.fa-envelope {
+    margin-right: 8px; /* Add some margin to separate the icon from the text */
+}
+
+.item{
+   padding-bottom:20px;
+    padding-top:40px;
+    font-size:20px;
+    font-size:26px
+
+}
+.row{
+    min-height:90vh
+}
+a{
+    cursor:pointer
+}
+
+.icon-wrapper svg{
+    height:60px;
+
+}
+.icon-wrapper img{
+    height:60px;
+    padding-bottom:10px;
+}
+.icon-wrapper label{
+    font-size:20px
+}
+.intro{
+    margin-bottom: -200px; /* Adjust this value to reduce or increase the gap */
+}
+.triangle{
+    display:none
+}
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    .intro {
+        font-size: 24px;
+        transform: translate(-1%, -9%);
+    }
+    .image{
+        display:none
+    }
+    .triangle{
+        height:200px;
+        width:70px;
+        margin-top:530px;
+        animation:bounce 1s infinite;
+    }
+    .btn-btn2 {
+        height: 40px;
+        width: 45px;
+        font-size: 22px;
+        padding-left: 30px;
+        padding-right: 55px;
+    }
+
+    .projects {
+        font-size: 18px;
+    }
+
+    .text{
+        font-size:20px
+    }
+     .container svg{
+       height:90px;
+       width:120px;
+       
+       
+    }
+    .theme-change{
+      animation:none
+    }
+    .container{
+        width:400px;
+        border:2px solid;
+       height:auto
+
+    }
+    .line{
+        display:none
+    }
+    .second {
+        height: 600px;
+    }
+
+    .about {
+        font-size: 26px;
+    }
+
+    .contact-left {
+        margin-left: -70px;
+        font-size: 26px;
+    }
+
+    .contact-right {
+        margin-left: -300px;
+        margin-top:300px;
+        font-size: 20px;
+    }
+
+    .contact-right form {
+        height: 90px;
+    }
+
+    #name {
+        height: 25px;
+        width: 80px;
+    }
+
+    .item1 label {
+        font-size: 24px;
+    }
+
+    .item {
+        padding-bottom: 15px;
+        padding-top: 30px;
+        font-size: 24px;
+    }
+
+    .icon-wrapper svg {
+        height: 50px;
+    }
+
+    .icon-wrapper img {
+        height: 50px;
+        padding-bottom: 8px;
+    }
+
+    .icon-wrapper label {
+        font-size: 18px;
+    }
+
+    .intro {
+        margin-bottom: -150px;
+    }
+    .row{
+        margin-bottom:350px
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .intro {
+        font-size: 28px;
+        transform: translate(-1%, -7%);
+    }
+     .theme-change{
+     animation:none
+     }
+    .btn-btn2 {
+        height: 45px;
+        width: 50px;
+        font-size: 24px;
+        padding-left: 20px;
+        padding-right: 55px;
+    }
+    .triangle{
+        height:200px;
+        width:70px;
+        margin-top:560px;
+        animation:bounce 1s infinite;
+    }
+
+    .projects {
+        font-size: 28px;
+    }
+
+    .container svg {
+        height: 100px;
+        width: 130px;
+    }
+
+    .second {
+        height: 650px;
+    }
+
+    .about {
+        font-size: 22px;
+    }
+
+    .contact-left {
+        margin-left: -50px;
+        font-size: 28px;
+    }
+
+    .contact-right {
+        margin-left: -300px;
+        margin-top:300px;
+        font-size: 20px;
+    }
+
+    .contact-right form {
+        height: 90px;
+    }
+    .row{
+        margin-bottom:350px
+    }
+
+    #name {
+        height: 28px;
+        width: 85px;
+    }
+
+    .item1 label {
+        font-size: 28px;
+    }
+
+    .item {
+        padding-bottom: 17px;
+        padding-top: 32px;
+        font-size: 26px;
+    }
+
+    .icon-wrapper svg {
+        height: 55px;
+    }
+
+    .icon-wrapper img {
+        height: 55px;
+        padding-bottom: 9px;
+    }
+
+    .icon-wrapper label {
+        font-size: 20px;
+    }
+
+    .intro {
+        margin-bottom: -175px;
+    }
+
+    .image {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .intro {
+        font-size: 32px;
+        transform: translate(-1%, -5%);
+    }
+
+    .btn-btn2 {
+        height: 50px;
+        width: 55px;
+        font-size: 28px;
+        padding-left: 23px;
+        padding-right: 65px;
+    }
+    .theme-change{
+        animation:none
+    }
+    .triangle{
+        height:200px;
+        width:70px;
+        margin-top:560px;
+        animation:bounce 1s infinite;
+    }
+    .projects {
+        font-size: 24px;
+    }
+
+    .container svg {
+        height: 110px;
+        width: 140px;
+    }
+
+    .second {
+        height: 750px;
+    }
+
+    .about {
+        font-size: 26px;
+    }
+
+    .contact-left {
+        margin-left: -30px;
+        font-size: 22px;
+    }
+
+    .contact-right {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    .contact-right form {
+        height: 110px;
+    }
+
+    #name {
+        height: 35px;
+        width: 100px;
+    }
+
+    .item1 label {
+        font-size: 30px;
+    }
+
+    .item {
+        padding-bottom: 22px;
+        padding-top: 35px;
+        font-size: 26px;
+    }
+
+    .icon-wrapper svg {
+        height: 100px;
+    }
+
+    .icon-wrapper img {
+        height: 100px;
+        padding-bottom: 10px;
+    }
+
+    .icon-wrapper label {
+        font-size: 22px;
+    }
+
+    .intro {
+        margin-bottom: -225px;
+    }
+
+    .image {
+        display: block;
+    }
+    .contact{
+        margin-bottom:600px
+    }
+}
