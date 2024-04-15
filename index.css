@@ -23,8 +23,12 @@ body.white-bg .item{
 body.white-bg .theme-change{
     fill:black
 }
-
-
+.the{
+    cursor:pointer
+}
+.thi{
+    cursor:pointer
+}
 section {
     display: grid;
     place-items: center;
@@ -280,11 +284,20 @@ form{
 
 .theme-change {
     
-    fill: white;
+    fill: white; 
+    margin-left:30px;
+    margin-top:30px;
+    cursor:pointer;
+    animation:bounce 2s infinte;
+    pointer-events: bounding-box;
+     /* Change cursor to pointer */
+        pointer-events: all;  /* Make the entire SVG clickable */
+  
 }
-a{
-cursor:pointer
+.theme-toggle {
+    cursor: pointer;
 }
+
 @media (min-width:300px) and (max-width:500px){
 .intro  {
     font-size:27px;
@@ -386,9 +399,7 @@ font-size:26px;
 .row{
     min-height:90vh
 }
-a{
-    cursor:pointer
-}
+
 
 .icon-wrapper svg{
     height:60px;
@@ -607,22 +618,17 @@ a{
     }
 }
 
-@media screen and (min-width: 1025px) {
-    .intro {
-        font-size: 32px;
-        transform: translate(-1%, -5%);
-    }
+@media screen and (min-width: 1025px) and (max-width:1400px) {
+  
 
     .btn-btn2 {
         height: 50px;
         width: 55px;
         font-size: 28px;
-        padding-left: 23px;
-        padding-right: 65px;
+        padding-left: 20px;
+        padding-right: 75px;
     }
-    .theme-change{
-        animation:none
-    }
+   
     .triangle{
         height:200px;
         width:70px;
